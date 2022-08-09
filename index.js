@@ -1,30 +1,31 @@
 class Stack {
-    #list = [];
+    list = [1, 2, 3];
 
     constructor(newList) {
-        if (newList) this.#list = newList;
+     this.list = newList;
     }
     
     push(newAtt) {
-        this.#list.push(newAtt);
+        console.log(newAtt);
+        newList.push(newAtt);
     }
     
-    peek(newAtt) {
-        this.#list.peek(newAtt);
-    }
+    // peek(newAtt) {
+    //     this.#list.peek(newAtt);
+    // }
 
-    get count() {
-        return this.#list.length;
-    }
+    // get count() {
+    //     return this.#list.length;
+    // }
 
-    set count(count) {
-        return (this.#list.length = count);
-    }
+    // set count(count) {
+    //     return (this.#list.length = count);
+    // }
 
 }
 
-const ourList = new Stack([1, 2, 3]);
-ourList.push(1);
+// const ourList = new Stack([1, 2, 3]);
+
 class Queue {}
 
 module.exports = { Stack, Queue };

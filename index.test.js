@@ -2,7 +2,7 @@ const { Stack } = require("./index.js");
 describe("Stack Class", () => {
   it("#push should add a new item to the stack ", () => {
     const stack = new Stack();
-    console.log(stack);
+    
     stack.push(1);
     expect(stack[0]).toEqual(1);
   });

@@ -1,19 +1,25 @@
 class Stack {
-    #list;
+    #list = [];
 
     constructor(list) {
         this.#list = list || [];
     }
-
+    
     push(item) {
         this.#list.push(item)
     }
 
 
-    peak() {
+    peek() {
        return this.#list[this.#list.length-1];
     }
+    get count() {
+        return this.#list.length;
+    }
 }
+
+// const stack = new Stack([1])
+// console.log(stack);
 
 class Queue {
     #things;

@@ -2,9 +2,16 @@ const { Stack, Queue } = require("./index.js");
 describe("Stack Class", () => {
   it("#push should add a new item to the stack ", () => {
     const stack = new Stack();
-    stack.push(1);
+    stack.push('fox');
     console.log(stack);
-    expect(stack[0]).toEqual(1);
+    expect(stack.peek()).toBe('fox');
+  });
+  it("#push should add a new item to the stack ", () => {
+    const stack = new Stack();
+    stack.push("fox");
+    console.log(stack);
+    expect(stack.count).toBe(1);
+    // expect(stack).toContain('fox');
   });
   // add more tests here...
   it('should add an item to the back', () => {

@@ -4,13 +4,13 @@ class Stack {
     constructor(newList) {
         if (newList) this.#list = newList;
     }
-
-    push(newList) {
-        this.#list.push(newList);
+    
+    push(newAtt) {
+        this.#list.push(newAtt);
     }
-
-    peek(newList) {
-        this.#list.peek(newList)
+    
+    peek(newAtt) {
+        this.#list.peek(newAtt);
     }
 
     get count() {
@@ -24,9 +24,7 @@ class Stack {
 }
 
 const ourList = new Stack([1, 2, 3]);
-console.log(ourList);
-ourList.push(4);
-
+ourList.push(1);
 class Queue {}
 
 module.exports = { Stack, Queue };
